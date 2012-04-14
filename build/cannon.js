@@ -2404,18 +2404,19 @@ CANNON.World.prototype.step = function(dt){
   var invm = world.invm;
 
   // @todo reuse these somehow?
+  /*
   var vx_lambda = new Float32Array(world.x.length);
   var vy_lambda = new Float32Array(world.y.length);
   var vz_lambda = new Float32Array(world.z.length);
   var wx_lambda = new Float32Array(world.x.length);
   var wy_lambda = new Float32Array(world.y.length);
   var wz_lambda = new Float32Array(world.z.length);
-
+*/
   var lambdas = new Float32Array(p1.length);
-  var lambdas_t1 = new Float32Array(p1.length);
-  var lambdas_t2 = new Float32Array(p1.length);
+ /* var lambdas_t1 = new Float32Array(p1.length);
+  var lambdas_t2 = new Float32Array(p1.length);*/
   for(var i=0; i<lambdas.length; i++){
-    lambdas[i] = 0;
+    lambdas[i] = 0;/*
     lambdas_t1[i] = 0;
     lambdas_t2[i] = 0;
     vx_lambda[i] = 0;
@@ -2423,7 +2424,7 @@ CANNON.World.prototype.step = function(dt){
     vz_lambda[i] = 0;
     wx_lambda[i] = 0;
     wy_lambda[i] = 0;
-    wz_lambda[i] = 0;
+    wz_lambda[i] = 0;*/
   }
 
   var that = this;
